@@ -8,7 +8,6 @@ body {
 
 .container {
     width: 586px;
-    height: 800px;
     border: 1px solid #ddd;
     margin: 20px auto;
 }
@@ -56,7 +55,6 @@ body {
 
 .content ul li {
     width: 180px;
-    height: 240px;
     margin: 5px;
     float: left;
     overflow: hidden;
@@ -67,19 +65,41 @@ body {
     position: relative;
 }
 
+.content ul .card-mode-li {
+    height: 240px;
+}
+
+.content ul .list-mode-li {
+    height: 110px;
+}
+
 .content ul li:hover {
     box-shadow: 3px 3px 5px #eee;
 }
 
-.content ul li img {
+.content ul li .card-mode-img {
     height: 150px;
+}
+
+.content ul li .list-mode-img {
+    height: 65px;
+    width: 65px;
+    margin: 5px 10px 5px 5px;
+    float: left;
 }
 
 .content ul li h3 {
     font-size: 14px;
     font-weight: bold;
     margin-left: 10px;
+}
+
+.content ul li .card-mode-h3 {
     margin-top: 3px;
+}
+
+.content ul li .list-mode-h3 {
+    margin-top: 10px;
 }
 
 .content ul li p {
@@ -105,18 +125,5 @@ body {
     color: #0e82ff;
 }
 
-/*=========*/
-.list-mode-li {
-    height: 110px !important;
-}
 
-.list-mode-img {
-    height: 65px !important;
-    width: 65px !important;
-    margin: 5px 10px 5px 5px !important;
-    float: left !important;
-}
 
-.list-mode-h3 {
-    margin-top: 10px;
-}
