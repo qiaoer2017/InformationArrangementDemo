@@ -67,14 +67,26 @@
         document.getElementById("card").onclick = function () {
             this.className = "card-mode-on";
             document.getElementById("list").className = "list-mode-off";
+            var lis = document.getElementsByClassName("content")[0].getElementsByTagName("ul")[0].getElementsByTagName("li");
 
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].className = "";
+                lis[i].getElementsByTagName("img")[0].className = "";
+                lis[i].getElementsByTagName("h3")[0].className = "";
+            }
 
         };
         document.getElementById("list").onclick = function () {
             this.className = "list-mode-on";
             document.getElementById("card").className = "card-mode-off";
 
-            document.getElementById()
+            var lis = document.getElementsByClassName("content")[0].getElementsByTagName("ul")[0].getElementsByTagName("li");
+
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].className = "list-mode-li";
+                lis[i].getElementsByTagName("img")[0].className = "list-mode-img";
+                lis[i].getElementsByTagName("h3")[0].className = "list-mode-h3";
+            }
         };
     };
 </script>

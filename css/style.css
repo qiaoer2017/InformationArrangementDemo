@@ -106,17 +106,17 @@ body {
 }
 
 /*=========*/
-.content ul li, .list-mode-li {
-    height: 110px;
+.list-mode-li {
+    height: 110px !important;
 }
 
-.content ul li img, .list-mode-img {
-    height: 65px;
-    width: 65px;
-    margin: 5px 10px 5px 5px;
-    float: left;
+.list-mode-img {
+    height: 65px !important;
+    width: 65px !important;
+    margin: 5px 10px 5px 5px !important;
+    float: left !important;
 }
 
-.content ul li h3, .list-mode-h3 {
+.list-mode-h3 {
     margin-top: 10px;
 }
