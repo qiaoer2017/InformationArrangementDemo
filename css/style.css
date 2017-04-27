@@ -1,0 +1,122 @@
+body {
+    font-family: "SF UI Text";
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width: 586px;
+    height: 800px;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+}
+
+.mode-switch {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.mode-switch a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card-mode-on {
+    background: url("../img/mode.png") 20px 0;
+}
+
+.card-mode-off {
+    background: url("../img/mode.png") 0 0;
+}
+
+.list-mode-off {
+    margin-left: 10px;
+    background: url("../img/mode.png") 0 20px;
+}
+
+.list-mode-on {
+    margin-left: 10px;
+    background: url("../img/mode.png") 20px 20px;
+}
+
+.content {
+    width: 576px;
+    margin: 10px auto;
+}
+
+.content ul {
+    overflow: hidden;
+}
+
+.content ul li {
+    width: 180px;
+    height: 240px;
+    margin: 5px;
+    float: left;
+    overflow: hidden;
+    border-radius: 5px;
+    border-left: 0.5px solid #eaeaea;
+    box-shadow: 1px 1px 3px #eee;
+    line-height: 1.4;
+    position: relative;
+}
+
+.content ul li:hover {
+    box-shadow: 3px 3px 5px #eee;
+}
+
+.content ul li img {
+    height: 150px;
+}
+
+.content ul li h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.content ul li p {
+    margin-left: 10px;
+    font-size: 11px;
+    color: #666;
+}
+
+.content ul li div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 2;
+    font-size: 15px;
+    color: #333;
+    background: #eee;
+    cursor: pointer;
+}
+
+.content ul a {
+    text-decoration: none;
+    color: #0e82ff;
+}
+
+/*=========*/
+.content ul li, .list-mode-li {
+    height: 110px;
+}
+
+.content ul li img, .list-mode-img {
+    height: 65px;
+    width: 65px;
+    margin: 5px 10px 5px 5px;
+    float: left;
+}
+
+.content ul li h3, .list-mode-h3 {
+    margin-top: 10px;
+}
